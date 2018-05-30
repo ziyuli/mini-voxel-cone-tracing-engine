@@ -15,7 +15,7 @@ Mini Voxel Cone Tracing Engine
 - Post-Processing
 	- Bloom
 	- FXAA / SSAA
-	- Lens Flare
+	- Lens Flare (Ghost and Halo)
 	- Lens Dirt
 	- Chromatic Aberration
 	- Vignetting
@@ -64,6 +64,26 @@ For performace result, All the images demonstrate below are not using any anti-a
 | ----- | ----- | ----- |
 | ![n](img/V.bmp) | ![v](img/Vy8.bmp) | ![v2](img/Vy22.bmp) |
 
+
+##### Platform with Atmospheric Fog (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
+| Far | Mid | Near |
+| ----- | ----- | ----- |
+| ![n](img/fog_far.bmp) | ![v](img/fog_mid.bmp) | ![v2](img/fog_near.bmp) |
+
+##### Platform with Atmospheric Fog (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
+| Far | Mid | Near |
+| ----- | ----- | ----- |
+| ![n](img/fog_far.bmp) | ![v](img/fog_mid.bmp) | ![v2](img/fog_near.bmp) |
+
+##### Platform with Different Exposures (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
+| 0.25 | 1.0 | 2.5 | 5.0 |
+| ----- | ----- | ----- | ----- |
+| ![n](img/exp+0.25.bmp) | ![v](img/exp+1.0.bmp) | ![v2](img/exp+2.5.bmp) | ![v2](img/exp+5.0.bmp) |
+
+##### Platform with Other Effects (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
+| Lens Flare (Ghost and Halo) | Lens Dirt | Light Scattering |
+| ----- | ----- | ----- |
+| ![n](img/lens0.bmp) | ![v](img/lens1.bmp) | ![v2](img/scatter.bmp) |
 
 #### Benchmarks
 For performace result, All the images demonstrate below are not using any anti-aliasing.
