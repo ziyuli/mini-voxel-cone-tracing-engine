@@ -81,9 +81,9 @@ For performace result, All the images demonstrate below are not using any anti-a
 | ![n](img/exp+0.25.bmp) | ![v](img/exp+1.0.bmp) | ![v2](img/exp+2.5.bmp) | ![v2](img/exp+5.bmp) |
 
 ##### Platform with Other Effects (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
-| Lens Flare (Ghost and Halo) | Lens Dirt | Light Scattering |
+| Lens Flare and Dirt | DOF | Light Scattering |
 | ----- | ----- | ----- |
-| ![n](img/lens1.bmp) | ![v](img/lens0.bmp) | ![v2](img/scatter.bmp) |
+| ![n](img/lens0.bmp) | ![v](img/dof.bmp) | ![v2](img/scatter.bmp) |
 
 #### Benchmarks
 For performace result, All the images demonstrate below are not using any anti-aliasing.
