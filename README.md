@@ -27,11 +27,15 @@ Mini Voxel Cone Tracing Engine
 	- Tone Mapping (Reinhard / Exposure / Filmic)
 - In Progress
 	- Auto-Focus
+	- Bokeh
+	- Environment Map
+	- HBAO
+- Future Plans...
 	- Auto-Exposure
 	- Conservative Voxelization
 	- Anisotropic Mipmaps
-	- Environment Map
-	- HBAO
+	- ARBs
+
 
 
 #### Voxel Cone Tracing
@@ -89,7 +93,30 @@ For performace result, All the images demonstrate below are not using any anti-a
 For performace result, All the images demonstrate below are not using any anti-aliasing.
 All the benchmarks run on Intel Iris 6100 (OpenGL 4.4)
 
+##### Test scenerio 
 
+For a static-voxelization scene with all effects on (except AA),
+the refresh rate is around 35-45fps which seems quite nice for a entry-level integrated graphics chip under resolution 512x512.
+However, when the resolution jump to 1024x1024, the program barely runs under 15-20fps due to the low preformance.
+
+Based on the diagnostics of the RenderDoc, textures read and write operations are the most intensed workload for post-effects.
+For an integrated graphics chip which does not have the dedicate high bandwidth memory and poor texture fill rate could lead such bad results.
+On the other hand, there is some optimization can be achieved in texture operations, such as blur.
+
+Some other benchmark data will be uploaded soon.
+In the future, using OpenGL vendor specific extensions could also utilize the full power of the lastest released graphics card.
+
+(Unfinished......)
+
+| Components   | Descriptions               | Runtime |
+|--------------|----------------------------|---------|
+| Framebuffer  | 512x512 4-channel HDR      |   n/a   |
+| Cone Tracing | 8 Diffuse Cone             |   n/a   |
+| Voxelization | 64x64x64 4-channel         |   n/a   |
+| Bloom        | 256x256 UpRes              |   n/a   |
+| Scatter      | 256x256 UpRes / 100 sample |   n/a   |
+| DOF          | 3x3 sample                 |   n/a   |
+| Others       | Flare 256x256              |   n/a   |
 
 
 
