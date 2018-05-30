@@ -64,6 +64,11 @@ For performace result, All the images demonstrate below are not using any anti-a
 | ----- | ----- | ----- |
 | ![n](img/V.bmp) | ![v](img/Vy8.bmp) | ![v2](img/Vy22.bmp) |
 
+##### Cornel Box with SSAA (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
+| Normal | SSAA x2 | SSAA x4 (Extremely Slow!) |
+| ----- | ----- | ----- |
+| ![n](img/512.bmp) | ![v](img/512aa.bmp) | ![v2](img/512aa4.bmp) |
+
 
 ##### Platform with Atmospheric Fog (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
 | Far | Mid | Near |
