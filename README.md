@@ -44,14 +44,14 @@ For performace result, All the images demonstrate below are not using any anti-a
 | ![Diff](img/cD.bmp) | ![InDiff](img/cD_GI.bmp) | ![InSp](img/cD_GI_S.bmp) | ![InAO](img/cD_GI_S_AO.bmp) | ![InDiff](img/cDX.bmp) |  ![InDiff](img/cGI.bmp) |
 
 ##### Cornel Box (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
-| Far Scene | Near Scene |
-| ----- | ----- |
-| ![Near](img/cornelbox0.bmp) | ![Far](img/cornelbox1.bmp) |
+| Scene 0 | Scene 1| Scene 2 |
+| ----- | ----- | ----- |
+| ![Near](img/cornelbox0.bmp) | ![Far](img/cornelbox1.bmp) | ![Far](img/cornelbox2.bmp) |
 
 ##### Cornel Box GI (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
-| Scene 0 | Scene 1 |
-| ----- | ----- |
-| ![Near](img/GI0.bmp) | ![Far](img/GI1.bmp) |
+| Scene 0 | Scene 1 | Scene 2 |
+| ----- | ----- | ----- |
+| ![g0](img/GI0.bmp) | ![g1](img/GI1.bmp) | ![g2](img/GI2.bmp) |
 
 ##### Cornel Box with Tone Mapping (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
 | Exposure | Filmic | Reinhard |
@@ -60,11 +60,9 @@ For performace result, All the images demonstrate below are not using any anti-a
 
 
 ##### Cornel Box with Vignetting (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
-| Normal | Vignetting |
-| ----- | ----- |
-| ![n](img/V.bmp) | ![v](img/Vy.bmp) |
-
-
+| Normal | Vignetting with f8 | Vignetting with f22 |
+| ----- | ----- | ----- |
+| ![n](img/V.bmp) | ![v](img/Vy8.bmp) | ![v2](img/Vy22.bmp) |
 
 
 #### Benchmarks
