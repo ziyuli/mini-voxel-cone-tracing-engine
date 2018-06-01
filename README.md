@@ -89,9 +89,9 @@ For performace result, All the images demonstrate below are not using any anti-a
 | ![n](img/exp+0.25.bmp) | ![v](img/exp+1.0.bmp) | ![v2](img/exp+2.5.bmp) | ![v2](img/exp+5.bmp) |
 
 ##### Platform with Other Effects (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects, Atmospheric Effects)
-| Lens Flare and Dirt | DOF | Light Scattering |
-| ----- | ----- | ----- |
-| ![n](img/lens0.bmp) | ![v](img/dof.bmp) | ![v2](img/scatter.bmp) |
+| Lens Flare and Dirt | Chromatic Aberration | DOF | Light Scattering |
+| ----- | ----- | ----- | ----- |
+| ![n](img/lens0.bmp) |  ![v](img/ca.bmp) | ![v](img/dof.bmp) | ![v2](img/scatter.bmp) |
 
 #### Benchmarks
 For best performace result, all the test demonstrate below are not using any anti-aliasing.
