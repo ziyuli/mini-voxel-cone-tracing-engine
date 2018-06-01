@@ -2,12 +2,13 @@
 Mini Voxel Cone Tracing Engine
 ======================
 * Ziyu Li
-* Tested on: Windows 10, Intel i5-5257U @2.7GHz 8GB, Intel Iris Graphics 6100, OpenGL 4.4
+* Tested on: Windows 10, Intel Core i5-5257U @2.7GHz 8GB, Intel Iris Graphics 6100, OpenGL 4.4 (Currently)
 
 ## Features
 #### All Features
  - Voxel Cone Tracing
 	- Non-Conservative Voxelization with Atomic Counter
+	- Light Injection / Propagation
 	- Reflection, Refraction, Emission
 	- Soft Shadow
 	- Ambient Occlusion
@@ -25,8 +26,8 @@ Mini Voxel Cone Tracing Engine
 	- HDR
 	- Gamma Correction
 	- Tone Mapping (Reinhard / Exposure / Filmic)
-- In Progress
 	- Auto-Focus
+- In Progress
 	- Bokeh
 	- Environment Map
 	- HBAO
@@ -34,7 +35,6 @@ Mini Voxel Cone Tracing Engine
 	- Auto-Exposure
 	- Conservative Voxelization
 	- Anisotropic Mipmaps
-	- ARBs
 
 
 
@@ -42,10 +42,14 @@ Mini Voxel Cone Tracing Engine
 For performace result, All the images demonstrate below are not using any anti-aliasing.
 
 ##### Cornell Box (HDR 512x512, Voxels 64x64x64)
-
 | Diffuse | Indirect Diffuse | Indirect Specular | Indirect and AO | Indirect, Shadow and AO | Only Indirect GI |
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | ![Diff](img/cD.bmp) | ![InDiff](img/cD_GI.bmp) | ![InSp](img/cD_GI_S.bmp) | ![InAO](img/cD_GI_S_AO.bmp) | ![InDiff](img/cDX.bmp) |  ![InDiff](img/cGI.bmp) |
+
+##### Light Propagation (HDR 512x512, Voxels 64x64x64)
+| Normal | Propagation | Normal | Propagation |
+| ----- | ----- | ----- | ----- |
+| ![g0](img/n.bmp) | ![g1](img/p.bmp) | ![g2](img/light.bmp) | ![g2](img/light0.bmp) |
 
 ##### Cornel Box (HDR 512x512, Voxels 64x64x64, DOF, Bloom, Lens Effects)
 | Scene 0 | Scene 1| Scene 2 |
@@ -94,7 +98,6 @@ For best performace result, all the test demonstrate below are not using any ant
 All the benchmarks run on Intel Iris 6100 (OpenGL 4.4)
 
 ##### Scenerio 0
-(Unfinished......)
 
 | Components   | Descriptions               | Runtime |
 |--------------|----------------------------|---------|
@@ -105,6 +108,8 @@ All the benchmarks run on Intel Iris 6100 (OpenGL 4.4)
 | Scatter      | 256x256 UpRes / 100 sample |   n/a   |
 | DOF          | 3x3 sample                 |   n/a   |
 | Others       | Flare 256x256              |   n/a   |
+
+(unfinished...)
 
 #### Guess
 
@@ -119,7 +124,10 @@ On the other hand, there is some optimization can be achieved in texture operati
 Some other benchmark data will be uploaded soon.
 In the future, using OpenGL vendor specific extensions could also utilize the full power of the lastest released graphics card.
 
+(unfinished...)
 
+#### References
 
+(unfinished...)
 
 
