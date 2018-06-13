@@ -7,7 +7,7 @@ Mini Voxel Cone Tracing Engine
 ## Features
 #### All Features
  - Voxel Cone Tracing
-	- Non-Conservative Voxelization with Atomic Counter
+	- Non-Conservative Voxelization
 	- Light Injection / Propagation
 	- Reflection, Refraction, Emission
 	- Soft Shadow
@@ -15,7 +15,7 @@ Mini Voxel Cone Tracing Engine
 	- GI
 - Post-Processing
 	- Bloom
-	- FXAA / SSAA
+	- SSAA
 	- Lens Flare (Ghost and Halo)
 	- Lens Dirt
 	- Chromatic Aberration
@@ -28,6 +28,8 @@ Mini Voxel Cone Tracing Engine
 	- Tone Mapping (Reinhard / Exposure / Filmic)
 	- Auto-Focus
 - In Progress
+	- FXAA
+	- Atomic Counter
 	- Bokeh
 	- Environment Map
 	- HBAO
